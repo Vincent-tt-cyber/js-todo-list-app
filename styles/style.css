@@ -7,6 +7,9 @@
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
 }
 
 .wrapper {
@@ -16,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 340px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -29,13 +32,15 @@ body {
 
 .header-row {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .header__title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
+  margin: 0 0 20px 0;
 }
 
 .header-box {
@@ -87,20 +92,49 @@ body {
   margin: auto 0 0 0;
   padding: 40px 0;
   background-color: #fff;
+  text-align: center;
+}
+
+.section-todos-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 10px;
 }
 
 .todo-item {
+  max-width: 300px;
+  width: 100%;
   cursor: pointer;
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 15px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
+  gap: 10px;
   align-items: center;
 }
 
+.todo-item__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item__btn-del {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: crimson;
+}
 .custom-checkbox {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   border: 2px solid #07972b;
   background-color: #fff;
   border-radius: 50%;
