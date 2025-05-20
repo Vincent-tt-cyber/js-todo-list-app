@@ -12,14 +12,36 @@
     />
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
+
   <body>
     <main class="wrapper">
+      <!-- Шапка -->
       <header class="header">
         <div class="container">
-          <h1 class="header__title">Todo List</h1>
+          <div class="header-row">
+            <h1 class="header__title">Todo List</h1>
+            <div class="header-box">
+              <input
+                class="header__input"
+                type="text"
+                placeholder="Введите название задачи"
+              />
+              <input class="header__add-btn" type="button" value="Добавить" />
+            </div>
+          </div>
         </div>
       </header>
-      <footer>
+
+      <div class="container">
+        <!-- Список задач -->
+        <section class="section-todos">
+          <div class="todo-item">
+            <span class="custom-checkbox"></span>
+            <p>Задача 1</p>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
         <div class="container">
           <p class="footer__text">
             Created by
@@ -35,6 +57,6 @@
       </footer>
     </main>
 
-    <script src="/js/main.js"> </script>
+    <script src="/js/main.js"></script>
   </body>
 </html>
