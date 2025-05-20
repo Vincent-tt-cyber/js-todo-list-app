@@ -90,6 +90,7 @@ body {
 }
 
 .todo-item {
+  cursor: pointer;
   display: flex;
   justify-content: start;
   align-items: center;
