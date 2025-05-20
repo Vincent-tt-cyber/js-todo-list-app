@@ -116,6 +116,13 @@ body {
   align-items: center;
 }
 
+.todo-item p {
+  width: 190px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .todo-item__info {
   display: flex;
   align-items: center;
